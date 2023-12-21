@@ -1,0 +1,54 @@
+.form{
+
+    $radius:8px;
+    $table_width:80%;
+    $darkGreen:rgb(18, 79, 37);
+    $lightGreen:rgb(14, 120, 76);
+
+
+    width: 60%;
+    margin: 40px auto;
+    border: 1px solid $darkGreen;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: $radius;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    // padding: 10px;
+
+    h2{
+        text-align: center;
+        position: relative;
+        margin: 0;
+        padding: 10px;
+        background-color: $darkGreen;
+    }
+
+    .form-line{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        // gap: 15px;
+
+        .form-item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 5px;
+            padding: 5px 10px;
+
+            input, textarea, select{
+                background:none;
+                border: 1px solid white;
+                resize: vertical;
+            }
+        }
+
+    }
+
+    &>input{
+        margin: 15px;
+    }
+
+}
